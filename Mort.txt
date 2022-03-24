@@ -1,0 +1,16 @@
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Hydro Functions", themez)
+local Tab = Window:NewTab("Functions")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Get Hwid", "Gets your hwid that hydro uses", function()
+    print(hydro.gethwid())
+end)
+Section:NewButton("Get User", "Gets your username", function()
+    print(hydro.getuser())
+end)
+local Tab2 = Window:NewTab("Stuff")
+local Section2= Tab2:NewSection("Credits:")
+Section2:NewLabel("Made by mortus_#8680")
+Section2:NewLabel("With some help from niqu#1337")
+
