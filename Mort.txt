@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Hydro Functions", themez)
+local Window = Library.CreateLib("Hydro Functions", "Serpent")
 local Tab = Window:NewTab("Functions")
 local Section = Tab:NewSection("Main")
 Section:NewButton("Get Hwid", "Gets your hwid that hydro uses", function()
@@ -8,21 +8,6 @@ end)
 Section:NewButton("Get User", "Gets your username", function()
     print(hydro.getuser())
 end)
-
-local Tab2 = Window:NewTab("Premium")
-local Section2= Tab2:NewSection("Spoofer")
-
-Section2:NewLabel("Only For Hydro Premium Users!")
-
-Section2:NewButton("Spoof", "Spoofs your hwid, Spoofs your username  ", function()
-hydro.spoof()
-end)
-
-Section2:NewButton("UnSpoof", "UnSpoofs your hwid, UnSpoofs your username  ", function()
-hydro.unspoof()
-end)
-
-
 
 local Tab3 = Window:NewTab("Stuff")
 local Section3= Tab3:NewSection("Credits:")
